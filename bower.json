@@ -1,0 +1,9 @@
+{
+  "name": "Internet Security",
+  "version": "1.0.0",
+  "dependencies": {
+    "impress.js": "~0.5.3",
+    "handlebars": "~1.0.0",
+    "jquery": "~1.10"
+  }
+}
