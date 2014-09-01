@@ -9,7 +9,69 @@
     display:none;
 }
 
-.step h2 {
+.slide-content {
+	padding: 10px;
+}
+
+.slide-top-title {
+	color: gray;
+	margin-left: -50px;
+}
+
+.slide-sub-title {
+	color: gray;
+	margin: auto;
+}
+
+.slide-list-sm {
+	font-size: 28px;
+}
+
+.slide-example {
+	color: gray;
+	font-size: 23px;
+	display: block;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+p,h1,h2,h3,h4 {
+    padding: 10px;
+}
+
+h1 {
+    font-size: 118px;
+    font-weight: bold;
+}
+
+h2 {
     font-size: 78px;
     font-weight: bold;
 }
+
+h3 {
+	font-size: 48px;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 35px;
+	font-weight: bold;
+}
+
+ul > li{
+	font-size: 38px;
+	list-style-type: circle;
+	margin-left: 50px;
+}
+
+ol > li{
+	font-size: 38px;
+	list-style-type: decimal;
+	margin-left: 50px;
+}
+
+p {
+	font-size: 38px;
+}
+
