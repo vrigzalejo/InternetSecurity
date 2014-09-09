@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "version": "1.0.0",
+  "name": "Internet Security",
+  "version": "1.0.1",
   "private": true,
   "devDependencies": {
     "bouncy": "^3.2.1",
