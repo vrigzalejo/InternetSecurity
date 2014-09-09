@@ -1,5 +1,5 @@
 [
-   {
+    {
         "uri": "intro.html",
         "id": "intro",
         "class": "step",
@@ -329,9 +329,9 @@
             "x": 53000,
             "y": 166,
             "z": 1,
-            "scale": 2,
-            "rotate-x": 0,
-            "rotate-y": 0,
+            "scale": 3,
+            "rotate-x": 80,
+            "rotate-y": 50,
             "rotate-z": 0
         }
     },
@@ -358,7 +358,7 @@
             "y": 192,
             "z": 1,
             "scale": 3,
-            "rotate-x": 50,
+            "rotate-x": 70,
             "rotate-y": 60,
             "rotate-z": 0
         }
@@ -512,8 +512,8 @@
             "y": 335,
             "z": 1,
             "scale": 2,
-            "rotate-x": 50,
-            "rotate-y": 60,
+            "rotate-x": 40,
+            "rotate-y": 50,
             "rotate-z": 0
         }
     },
@@ -582,8 +582,8 @@
             "y": 387,
             "z": 1,
             "scale": 1,
-            "rotate-x": 50,
-            "rotate-y": 60,
+            "rotate-x": 40,
+            "rotate-y": 50,
             "rotate-z": 0
         }
     },
@@ -778,8 +778,8 @@
             "y": 569,
             "z": 1,
             "scale": 4,
-            "rotate-x": 50,
-            "rotate-y": 60,
+            "rotate-x": 40,
+            "rotate-y": 30,
             "rotate-z": 0
         }
     },
@@ -792,8 +792,8 @@
             "y": 582,
             "z": 1,
             "scale": 3,
-            "rotate-x": 50,
-            "rotate-y": 60,
+            "rotate-x": 40,
+            "rotate-y": 50,
             "rotate-z": 0
         }
     },
@@ -803,11 +803,11 @@
         "class": "step",
         "data": {
             "x": 185000,
-            "y": 595,
+            "y": 1950,
             "z": 1,
-            "scale": 2,
-            "rotate-x": 40,
-            "rotate-y": 60,
+            "scale": 4,
+            "rotate-x": 10,
+            "rotate-y": 40,
             "rotate-z": 0
         }
     },
@@ -817,12 +817,12 @@
         "class": "step",
         "data": {
             "x": 189000,
-            "y": 608,
+            "y": 7608,
             "z": 1,
-            "scale": 1,
-            "rotate-x": 0,
-            "rotate-y": 0,
-            "rotate-z": 90
+            "scale": 5,
+            "rotate-x": 10,
+            "rotate-y": 40,
+            "rotate-z": 180
         }
     },
     {
@@ -847,9 +847,9 @@
             "x": 197000,
             "y": 634,
             "z": 1,
-            "scale": 2,
-            "rotate-x": 50,
-            "rotate-y": 60,
+            "scale": 4,
+            "rotate-x": 10,
+            "rotate-y": 20,
             "rotate-z": 0
         }
     },
@@ -862,8 +862,8 @@
             "y": 647,
             "z": 1,
             "scale": 3,
-            "rotate-x": 50,
-            "rotate-y": 60,
+            "rotate-x": 20,
+            "rotate-y": 30,
             "rotate-z": 0
         }
     },
@@ -876,9 +876,9 @@
             "y": 660,
             "z": 1,
             "scale": 4,
-            "rotate-x": 50,
-            "rotate-y": 60,
-            "rotate-z": 0
+            "rotate-x": 10,
+            "rotate-y": 20,
+            "rotate-z": 180
         }
     },
     {
@@ -889,9 +889,9 @@
             "x": 209000,
             "y": 673,
             "z": 1,
-            "scale": 1,
-            "rotate-x": 50,
-            "rotate-y": 60,
+            "scale": 5,
+            "rotate-x": 30,
+            "rotate-y": 40,
             "rotate-z": 10
         }
     },
@@ -914,6 +914,20 @@
         "id": "62",
         "class": "step",
         "data": {
+            "x": 215000,
+            "y": 2751,
+            "z": 1,
+            "scale": 1,
+            "rotate-x": 20,
+            "rotate-y": 50,
+            "rotate-z": 90
+        }
+    },
+    {
+        "uri": "63.html",
+        "id": "63",
+        "class": "step",
+        "data": {
             "x": 217000,
             "y": 699,
             "z": 1,
@@ -924,8 +938,8 @@
         }
     },
     {
-        "uri": "63.html",
-        "id": "63",
+        "uri": "64.html",
+        "id": "64",
         "class": "step",
         "data": {
             "x": 221000,
@@ -938,29 +952,43 @@
         }
     },
     {
-        "uri": "64.html",
-        "id": "64",
+        "uri": "65.html",
+        "id": "65",
         "class": "step",
         "data": {
             "x": 225000,
             "y": 725,
             "z": 1,
-            "scale": 1,
-            "rotate-x": 0,
+            "scale": 3,
+            "rotate-x": 40,
+            "rotate-y": 50,
+            "rotate-z": 90
+        }
+    },
+    {
+        "uri": "66.html",
+        "id": "66",
+        "class": "step",
+        "data": {
+            "x": 230000,
+            "y": 738,
+            "z": 10,
+            "scale": 10,
+            "rotate-x": 180,
             "rotate-y": 0,
             "rotate-z": 90
         }
     },
     {
-        "uri": "65.html",
-        "id": "65",
+        "uri": "67.html",
+        "id": "67",
         "class": "step",
         "data": {
-            "x": 229000,
-            "y": 738,
-            "z": 1,
-            "scale": 10,
-            "rotate-x": 150,
+            "x": 235000,
+            "y": 751,
+            "z": 19,
+            "scale": 1,
+            "rotate-x": 0,
             "rotate-y": 0,
             "rotate-z": 90
         }

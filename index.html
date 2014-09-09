@@ -1,43 +1,85 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=1024" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title></title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1024" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title></title>
 
-    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+  <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
-    <link href="bower_components/impress.js/css/impress-demo.css" rel="stylesheet" />
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="bower_components/videojs/dist/video-js/video-js.min.css" rel="stylesheet" />
-    <link href="css/impressConsole.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
+  <!-- <link href="bower_components/impress.js/css/impress-demo.css" rel="stylesheet" /> -->
+  <link href="css/impress-demo.css" rel="stylesheet" />
+  
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link href="bower_components/videojs/dist/video-js/video-js.min.css" rel="stylesheet" />
+
+  <link href="bower_components/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" media="screen" />
+
+  <link href="bower_components/animate-css/animate.min.css" rel="stylesheet" />
+
+  <link href="css/impressConsole.css" rel="stylesheet" />
+
+  <link href="css/main.css" rel="stylesheet" />
 
 
-    <link rel="shortcut icon" href="favicon.png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="shortcut icon" href="favicon.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+
 </head>
 
 <body>
 
-<div id="impress" class="steps">
-</div>
-
-
+  <div id="impress" class="steps">
+  </div>
   <script src="bower_components/videojs/dist/video-js/video.js"></script>
-  <script src="bower_components/jquery/jquery.js"></script>
+  <script src="bower_components/jquery/jquery.min.js"></script>
+  <script src="bower_components/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+  <script src="bower_components/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+  <script src="bower_components/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="bower_components/handlebars/handlebars.js"></script>
   <script src="bower_components/impress.js/js/impress.js"></script>
   <script src="js/impressConsole.js"></script>
   <script src="js/main.js"></script>
 
+  <script>
+  /**
+   * Load local video-js.swf file
+   */
+    videojs.options.flash.swf = "bower_components/videojs/dist/video-js/video-js.swf";
+  </script>
+
+  <script>
+  /**
+   * Load webm for chrome
+   */
+    if (window.chrome) {
+      videojs('#video-1').src({ type: "video/webm", src: 'vid/internet-security.webm' });
+      videojs('#video-2').src({ type: "video/webm", src: 'vid/secure-shopping.webm' });
+      videojs('#video-3').src({ type: "video/webm", src: 'vid/ddos-attack.webm' });
+      videojs('#video-4').src({ type: "video/webm", src: 'vid/threats.webm' });
+    }
+  </script>
+
   <script id="step-template" type="x-handlebars-template">
     <div id="{{id}}" class="{{class}}"{{#step data}}{{uri}}{{/step}}>{{{file}}}</div>
   </script> 
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.fancybox').fancybox({
+        padding : 0,
+        openEffect  : 'fade',
+        closeEffect  : 'fade',
+        openSpeed : 'medium'
+      });
+    });
+  </script>
 
   <script>
   // First, get sorted slide list
@@ -47,7 +89,7 @@
     impress().init();
     impressConsole().init();
   });
-  </script>
+</script>
 
 
 </body>

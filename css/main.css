@@ -78,6 +78,39 @@ ol > li{
 p {
 	font-size: 38px;
 }
+
+/**
+ * Overriding bootstrap
+ */
+a:hover {
+	background: transparent !important;
+}
+
+.btn-xlg,
+.btn-group-xlg > .btn {
+  padding: 10px 16px;
+  font-size: 48px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+.btn-info {
+	color: #5bc0de;
+	background-color: transparent;
+	border-color: #5bc0de;
+}
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open > .dropdown-toggle.btn-info {
+  color: #fff;
+  background-color: #5bc0de !important;
+  border-color: #46b8da;
+}
+
+
 /**
  * Added CSS animations for our images
  */
@@ -125,7 +158,8 @@ p {
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
    filter: alpha(opacity=0);
    opacity: 0;
-   background-color: rgba(219,127,8, 0.7);
+   /*background-color: rgba(219,127,8, 0.7);*/
+   background-color: rgba(42,176,161, 0.7);
    -webkit-transition: all 0.4s ease-in-out;
    -moz-transition: all 0.4s ease-in-out;
    -o-transition: all 0.4s ease-in-out;
