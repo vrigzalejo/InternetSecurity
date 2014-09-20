@@ -18,7 +18,8 @@
   "description": "Presentation using Impress.JS in Node",
   "main": "Gruntfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/bower/bin/bower install && npm install && ./node_modules/grunt-cli/bin/grunt server"
   },
   "repository": {
     "type": "git",

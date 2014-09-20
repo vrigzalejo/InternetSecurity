@@ -11,6 +11,10 @@ module.exports = function (grunt) {
     // load all grunt tasks
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
+    var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8888;
+    var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+ 
+
     grunt.initConfig({
         watch: {
             options: {
@@ -29,10 +33,10 @@ module.exports = function (grunt) {
         },
         connect: {
             options: {
-                port: 8888,
+                port: server_port,
                 // port: 9000,
                 // change this to '0.0.0.0' to access the server from outside
-                hostname: 'localhost'
+                hostname: server_ip_address
             },
             livereload: {
                 options: {
