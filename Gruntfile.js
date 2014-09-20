@@ -1,4 +1,3 @@
-// Generated on 2014-08-30 using generator-impress 0.1.2
 'use strict';
 
 var LIVERELOAD_PORT = 35729;
