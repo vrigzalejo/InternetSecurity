@@ -1,11 +1,12 @@
 {
-  "name": "Internet Security",
-  "version": "1.0.1",
+  "name": "InternetSecurity",
+  "version": "1.0.2",
   "private": true,
   "devDependencies": {
     "bouncy": "^3.2.1",
     "bower": "~0.9.2",
     "connect-livereload": "~0.2.0",
+    "grunt-cli": "~0.1.13",
     "grunt": "~0.4.1",
     "grunt-contrib-connect": "~0.2.0",
     "grunt-contrib-watch": "~0.5.2",
@@ -14,7 +15,25 @@
     "matchdep": "~0.1.2",
     "moment": "~2.0.0"
   },
-  "engines": {
-    "node": ">=0.8.0"
-  }
+  "description": "Presentation using Impress.JS in Node",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vrigzonline/InternetSecurity.git"
+  },
+  "keywords": [
+    "impressjs",
+    "vrigz",
+    "yeoman",
+    "node"
+  ],
+  "author": "Vrigz Alejo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vrigzonline/InternetSecurity/issues"
+  },
+  "homepage": "https://github.com/vrigzonline/InternetSecurity"
 }
