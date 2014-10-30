@@ -10,9 +10,10 @@ module.exports = function (grunt) {
     // load all grunt tasks
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
-    var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8888;
+    // var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8888;
     // var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
-    var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
+    var server_port = 8888;
+    var server_ip_address = '0.0.0.0';
  
 
     grunt.initConfig({
