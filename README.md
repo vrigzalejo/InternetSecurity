@@ -15,6 +15,6 @@ Run
 ---
 
 ```sh
-grunt server
+./node_modules/grunt-cli/bin/grunt server
 ```
 
