@@ -14,7 +14,7 @@ module.exports = function (grunt) {
     // var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
     var server_port = 9000;
     var server_ip_address = '0.0.0.0';
-    var process.env.HOSTNAME = 'http://shrouded-citadel-7007.herokuapp.com';
+    var process.env.HOSTNAME = 'https://shrouded-citadel-7007.herokuapp.com';
  
 
     grunt.initConfig({
@@ -35,12 +35,12 @@ module.exports = function (grunt) {
         },
         connect: {
             options: {
-                port: server_port,
+                // port: server_port,
                 // port: 9000,
                 // change this to '0.0.0.0' to access the server from outside
                 // 
-                hostname: server_ip_address
-                // hostname: process.env.HOSTNAME
+                // hostname: server_ip_address
+                hostname: process.env.HOSTNAME
             },
             livereload: {
                 options: {
