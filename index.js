@@ -6,7 +6,7 @@ app.use(express.static(__dirname + '/'))
 
 app.get('/', function(request, response) {
   // response.send('Hello World!')
-  res.render('index.html');
+  res.render('index.html')
 })
 
 app.listen(app.get('port'), function() {
