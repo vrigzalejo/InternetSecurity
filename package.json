@@ -21,8 +21,9 @@
   "description": "Presentation using Impress.JS in Node",
   "main": "Gruntfile.js",
   "scripts": {
-    "postinstall": "echo postinstall time; ./node_modules/grunt-cli/bin/grunt server", 
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "echo postinstall time; ./node_modules/bower/bin/bower install && npm install", 
+    "start": "./node_modules/grunt-cli/bin/grunt server"
   },
   "repository": {
     "type": "git",
