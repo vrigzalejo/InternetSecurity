@@ -61,5 +61,5 @@ module.exports = function (grunt) {
 
     // grunt.registerTask('server', ['connect:livereload', 'open', 'watch']);
     // grunt.registerTask('server', ['connect:livereload', 'watch:options']);
-    grunt.registerTask('heroku:development', ['connect:livereload', 'watch:options']);
+    grunt.registerTask('heroku:', ['connect:livereload', 'watch:options']);
 };
