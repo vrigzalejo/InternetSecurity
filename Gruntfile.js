@@ -34,10 +34,10 @@ module.exports = function (grunt) {
         },
         connect: {
             options: {
-                port: server_port,
+                port: process.env.PORT || server_port,
                 // port: 9000,
                 // change this to '0.0.0.0' to access the server from outside
-                hostname: server_ip_address
+                hostname: process.env.HOSTNAME || server_ip_address
             },
             livereload: {
                 options: {
@@ -57,6 +57,6 @@ module.exports = function (grunt) {
         }
     });
 
-    // grunt.registerTask('watch', ['connect:livereload', 'open', 'watch']);
+    // grunt.registerTask('server', ['connect:livereload', 'open', 'watch']);
     grunt.registerTask('server', ['connect:livereload', 'watch:options']);
 };
