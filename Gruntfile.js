@@ -36,7 +36,7 @@ module.exports = function (grunt) {
         },
         connect: {
             options: {
-                port: process.env.PORT || server_port, 
+                port: process.env.PORT || server_port,
                 // port: 9000,
                 // change this to '0.0.0.0' to access the server from outside
                 hostname: server_ip_address
