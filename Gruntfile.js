@@ -12,7 +12,7 @@ module.exports = function (grunt) {
 
     // var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8888;
     // var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
-    var server_port = 9000;
+    var server_port = 3000;
     var server_ip_address = '0.0.0.0';
  
 
@@ -58,5 +58,5 @@ module.exports = function (grunt) {
     });
 
     // grunt.registerTask('watch', ['connect:livereload', 'open', 'watch']);
-    grunt.registerTask('server', ['connect:livereload', 'open', 'watch:options']);
+    grunt.registerTask('server', ['connect:livereload', 'watch:options']);
 };
