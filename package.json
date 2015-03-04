@@ -4,7 +4,7 @@
   "engines": {
     "node": "0.10.x"
   },
-  "private": true,
+  "main": "index.js",
   "dependencies": {
     "bouncy": "~3.2.1",
     "bower": "~0.9.2",
@@ -19,7 +19,6 @@
     "moment": "~2.0.0"
   },
   "description": "Presentation using Impress.JS in Node",
-  "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "echo postinstall time; ./node_modules/bower/bin/bower install",

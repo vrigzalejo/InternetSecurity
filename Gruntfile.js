@@ -13,9 +13,8 @@ module.exports = function (grunt) {
     // var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8888;
     // var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
     var server_port = 3000;
-    // var process.env.PORT = 3000;
     var server_ip_address = '0.0.0.0';
-    // var herokuHOSTNAME = 'https://shrouded-citadel-7007.herokuapp.com';
+
  
 
     grunt.initConfig({
@@ -36,17 +35,16 @@ module.exports = function (grunt) {
         },
         connect: {
             options: {
-                port: process.env.PORT || server_port,
+                port: server_port,
                 // port: 9000,
                 // change this to '0.0.0.0' to access the server from outside
                 hostname: server_ip_address
-                // hostname: herokuHOSTNAME
             },
             livereload: {
                 options: {
                     middleware: function (connect) {
                         return [
-                            // lrSnippet,
+                            lrSnippet,
                             mountFolder(connect, '.')
                         ];
                     }
@@ -60,7 +58,5 @@ module.exports = function (grunt) {
         }
     });
 
-    // grunt.registerTask('server', ['connect:livereload', 'open', 'watch']);
-    grunt.registerTask('server', ['connect:livereload', 'watch:options']);
-    // grunt.registerTask('heroku:', ['connect:livereload', 'watch:options']);
+    grunt.registerTask('server', ['connect:livereload', 'open', 'watch']);
 };
