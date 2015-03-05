@@ -17,4 +17,8 @@ Run
 ```sh
 ./node_modules/grunt-cli/bin/grunt server
 ```
+or
+```sh
+node index.js
+```
 
