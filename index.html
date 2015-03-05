@@ -37,6 +37,11 @@
 
   <div id="impress" class="steps">
   </div>
+  <script type="text/javascript">
+    var infolinks_pid = 2306376;
+    var infolinks_wsid = 0;
+  </script>
+  <script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
   <script src="bower_components/videojs/dist/video-js/video.js"></script>
   <script src="bower_components/jquery/jquery.min.js"></script>
   <script src="bower_components/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
@@ -52,38 +57,38 @@
   /**
    * Load local video-js.swf file
    */
-    videojs.options.flash.swf = "bower_components/videojs/dist/video-js/video-js.swf";
-  </script>
+   videojs.options.flash.swf = "bower_components/videojs/dist/video-js/video-js.swf";
+ </script>
 
-  <script>
+ <script>
   /**
    * Load webm for chrome
    */
-    if (window.chrome) {
-      videojs('#video-1').src({ type: "video/webm", src: 'vid/internet-security.webm' });
-      videojs('#video-2').src({ type: "video/webm", src: 'vid/secure-shopping.webm' });
-      videojs('#video-3').src({ type: "video/webm", src: 'vid/ddos-attack.webm' });
-      videojs('#video-4').src({ type: "video/webm", src: 'vid/threats.webm' });
-    }
-  </script>
+   if (window.chrome) {
+    videojs('#video-1').src({ type: "video/webm", src: 'vid/internet-security.webm' });
+    videojs('#video-2').src({ type: "video/webm", src: 'vid/secure-shopping.webm' });
+    videojs('#video-3').src({ type: "video/webm", src: 'vid/ddos-attack.webm' });
+    videojs('#video-4').src({ type: "video/webm", src: 'vid/threats.webm' });
+  }
+</script>
 
-  <script id="step-template" type="x-handlebars-template">
-    <div id="{{id}}" class="{{class}}"{{#step data}}{{uri}}{{/step}}>{{{file}}}</div>
-  </script> 
+<script id="step-template" type="x-handlebars-template">
+  <div id="{{id}}" class="{{class}}"{{#step data}}{{uri}}{{/step}}>{{{file}}}</div>
+</script> 
 
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.fancybox').fancybox({
-        padding : 0,
-        openEffect  : 'fade',
-        closeEffect  : 'fade',
-        openSpeed : 'medium',
-        closeBtn: false
-      });
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.fancybox').fancybox({
+      padding : 0,
+      openEffect  : 'fade',
+      closeEffect  : 'fade',
+      openSpeed : 'medium',
+      closeBtn: false
     });
-  </script>
+  });
+</script>
 
-  <script>
+<script>
   // First, get sorted slide list
   $.getJSON('steps/list.json', function(data) {
     // Append ordered slides
@@ -92,7 +97,6 @@
     impressConsole().init();
   });
 </script>
-
 
 </body>
 </html>
